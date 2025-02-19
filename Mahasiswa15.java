@@ -1,21 +1,21 @@
 public class Mahasiswa15 {
-    String nim;
-    String nama;
-    String kelas;
-    double ipk;
+    public String nim;
+    public String nama;
+    public String kelas;
+    public double ipk;
 
-    void tampilkanInformasi() {
+    public void tampilkanInformasi() {
         System.out.println("NIM: " + nim);
         System.out.println("Nama: " + nama);
         System.out.println("Kelas: " + kelas);
         System.out.println("IPK: " + ipk);
     }
 
-    void ubahKelas(String kelasBaru) {
+    public void ubahKelas(String kelasBaru) {
         kelas = kelasBaru;
     }
 
-    void updateIpk(double ipkBaru) {
+    public void updateIpk(double ipkBaru) {
         if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
             ipk = ipkBaru;
         } else {
@@ -23,7 +23,7 @@ public class Mahasiswa15 {
         }
     }
 
-    String nilaiKinerja(double ipk) {
+    public String nilaiKinerja(double ipk) {
         if (ipk >= 3.5) return "Sangat Baik";
         else if (ipk >= 3.0) return "Baik";
         else if (ipk >= 2.5) return "Cukup";
